@@ -1,0 +1,588 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+/*
+Jokaiseen sivuun container
+ */
+.container {
+    max-width: 70rem;
+    margin: auto;
+    margin-top: 5rem;
+    display: block;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: Quicksand;
+}
+
+.users {
+    max-width: 70rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    align-content: center;
+}
+
+.about {
+    max-width: 70rem;
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+
+/*
+-----------------------------------------------
+Profiilin kuva sekä tekstit
+-----------------------------------------------
+ */
+#profile_info {
+    font-size: larger;
+}
+
+#profile_info img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+#user_details h1 {
+    text-align: center;
+    display: block;
+}
+
+/*
+-----------------------------------------------
+Details sivusto
+-----------------------------------------------
+ */
+.details {
+    max-width: 70rem;
+    margin: auto;
+    display: block;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: larger;
+    margin-top: 5rem;
+}
+
+.details h1 {
+    text-align: center;
+    align-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+    display: block;
+}
+
+
+.details div {
+    margin: auto auto auto auto;
+}
+
+.details figure img {
+    width: 100%;
+    height: auto;
+}
+
+#map {
+    max-width: 100%;
+    height: 40rem;
+
+}
+
+.details figcaption {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+#more_i {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+.about ul li{
+    justify-content: space-around;
+    padding: 1rem;
+}
+/**
+-----------------------------
+User page
+-----------------------------
+ */
+
+#user_profile_img img {
+    border-radius: 50%;
+}
+
+#user_name {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: larger;
+}
+
+#name {
+    padding-top: 1rem;
+    font-size: 2rem;
+
+}
+
+#user_location {
+    font-size: large;
+}
+
+.about h1 {
+    text-align: center;
+    align-content: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+    display: block;
+}
+
+/**
+---------------------------------
+Basic html
+---------------------------------
+ */
+header {
+    display: block;
+    flex-wrap: nowrap;
+
+}
+
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+
+
+}
+
+h1 {
+    font-size: xx-large;
+    text-align: center;
+    margin: auto auto;
+    display: flex;
+    border-top: 10px;
+}
+
+h2 {
+    font-size: xx-large;
+    padding: 10rem;
+}
+
+main ul {
+    list-style-type: none;
+    align-content: center;
+    justify-content: space-around;
+    display: inline-flex;
+    flex-wrap: wrap;
+    background-color: white;
+
+}
+
+ul li {
+    border: none;
+}
+#kuvalista img {
+    padding: 15px;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: xx-large;
+    color: #00c4ff;
+}
+
+.hidden {
+    display: none;
+
+}
+
+
+/**
+---------------------------------
+Searchbar styles
+---------------------------------
+ */
+.search {
+
+    margin: 25% auto 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 3rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-content: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.search input {
+    height: 40px;
+    background: #444444;
+    background: rgba(0, 0, 0, 1);
+    border-radius: 3px;
+    border: 1px solid #fff;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.search input {
+    width: 80%;
+    height: 40px;
+    color: #ccc;
+    border: 1px;
+    border-radius: 3px 0 0 3px;
+    font-size: larger;
+    font-family: 'Quicksand', sans-serif;
+    padding-left: 1rem;
+
+}
+
+.search input:focus {
+    outline: 0;
+    background: transparent;
+}
+
+.search button {
+    position: relative;
+    border: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 20%;
+    color: #fff;
+    background: transparent;
+    border-left: 1px solid #fff;
+    border-radius: 0 3px 3px 0;
+    font-size: larger;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.search button:hover {
+    background: #fff;
+    color: #444;
+}
+
+.search button:active {
+    box-shadow: 0 0 12px 0 rgba(225, 225, 225, 0.2);
+}
+
+.search button:focus {
+    outline: 0;
+}
+
+/*
+----------------------------
+ navigation
+---------------------------
+*/
+nav {
+    background: #ffffff;
+}
+
+.nav li {
+    padding: 0;
+
+}
+.navbar {
+    list-style: none;
+    display: flex;
+    padding: 1rem 2rem 0.3rem 2rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+nav a {
+    text-decoration: none;
+    color: #444444;
+    font-family: 'Pacifico', cursive;
+}
+
+.haku {
+    flex: 1;
+    margin-left: 3rem;
+    margin-right: 1rem;
+}
+#tophaku {
+    border: none;
+    border-bottom: solid 2px #444444;
+    width: 100%;
+    height: 1.5rem;
+
+}
+
+#topButton {
+    height: 1.7rem;
+    border: #444444 solid 1px;
+    padding: 0rem 2rem 0 2rem;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 15px;
+    font-family: 'Pacifico', cursive;
+}
+#topButton:hover {
+    background-color: #444444;
+    color: white;
+
+}
+.hakunappi {
+    margin-right: 3rem;
+}
+nav a:hover {
+    color: #89bdd3;
+}
+#tophaku:hover {
+    border-bottom: solid 3px #89bdd3;
+}
+
+
+@media all and (max-width: 640px) {
+    .haku {
+        margin-left: 0rem;
+        margin-right: 0rem;
+
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar > li {
+        flex-basis: 50%;
+    }
+    .hakunappi {
+        order: 1;
+        margin-right: 0;
+
+    }
+    #topButton {
+        width: 100%;
+    }
+    #tophaku {
+        text-align: center;
+    }
+    .ab {
+        text-align: center;
+    }
+    .logo {
+        text-align: center;
+    }
+
+}
+
+@media all and (max-width: 450px) {
+    .navbar > li {
+        flex-basis: 100%;
+    }
+    .haku {
+        order: 1;
+    }
+    .logo {
+        text-align: center;
+    }
+    .hakunappi {
+        padding-top: 0.2rem;
+    }
+}
+/*---weather about design ---*/
+.weather {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    list-style-type: none;
+    overflow: hidden;
+    align-content: center;
+    display: inline-block;
+
+}
+
+.page {
+
+    float: left;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.page > h5, p {
+    margin: 0;
+}
+
+.icon {
+    width: 2rem;
+}
+
+/* dropdown box */
+
+#drop_down_holder {
+    border: none;
+    width: 13em;
+}
+
+#drop_down_button {
+    display: inline-block;
+    width: 100%;
+    border: #00c4ff solid;
+    background-color: #00c4ff;
+    height: 2.5em;
+    font-size: 0.96em;
+}
+
+#drop_down_links {
+    display: none;
+    padding: 0;
+}
+
+#drop_down_links a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    background-color: #f1f1f1;
+    font-size: 0.92rem;
+    text-align: left;
+    padding: 0.3em 0.5em;
+
+}
+
+#drop_down_links a:hover {
+    background-color: rgba(2, 2, 2, 0.20);
+}
+
+#drop_down_holder:hover #drop_down_button {
+    color: white;
+}
+
+#drop_down_holder:hover #drop_down_links {
+    display: block;
+
+}
+
+#navigoi {
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+    margin-top: 3rem;
+    padding: 10px 20px;
+    border: 1px solid #018dc4;
+    -webkit-border-radius: 14px;
+    border-radius: 14px;
+    color: rgba(255, 255, 255, 0.9);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: rgba(0, 178, 68, 1);
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+    text-shadow: -1px -1px 0 rgba(15, 73, 168, 0.66);
+    font-size: large;
+    margin-bottom: 1rem;
+}
+
+#navigoi:hover {
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    -webkit-transition: all 600ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 600ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 600ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 600ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+/**
+-----------------------------
+Next and prev button styles
+-----------------------------
+ */
+
+#buttons button {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+    padding: 5px 25px;
+    border: 1px solid #018dc4;
+    margin: 5rem;
+    -webkit-border-radius: 14px;
+    border-radius: 14px;
+    font: normal 20px/normal "Quicksand";
+    color: rgba(255, 255, 255, 0.9);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: #64bdd6;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+    text-shadow: -1px -1px 0 rgba(15, 73, 168, 0.66);
+}
+
+#buttons button:hover {
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    background: #5ba0ea;
+    -webkit-transition: all 600ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 600ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 600ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 600ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+/**
+--------------------------
+About page devs
+--------------------------
+ */
+.devs img {
+    display: inline-block;
+    flex-wrap: nowrap;
+    border-radius: 50%;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.devs figure {
+    width: calc(100% / 3 - 1);
+    display: inline-block;
+    flex-wrap: nowrap;
+    font-size: larger;
+}
+
+.video h3 {
+    margin-top: 2rem;
+    text-decoration: underline;
+}
+.video video {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+@media  screen and (max-width: 720px) {
+ .container {
+     width: 90%;
+     margin: auto;
+ }
+}
+
+@media  screen and (max-width: 1200px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+}
